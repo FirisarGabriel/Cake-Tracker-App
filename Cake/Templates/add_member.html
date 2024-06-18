@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datavid Cake Tracker</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    
+    <h2>Datavid Cake Tracker</h2>
+    
+    <div class="content">
+        
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+
+        <div>
+        <a href="{{ url_for('index') }}">Back to Home</a>
+        </div>
+
+        <form method="POST" style="padding: 20px;">
+            <p>
+                <b><label for="firstname">First Name</label></b>
+            </p>
+            <p>
+            <input type="text" name="firstname" id="firstname" required>
+            </p>
+            
+            <p>
+                <b><label for="lastname">Last Name</label></b>
+            </p>
+            <p>
+            <input type="text" name="lastname" id="lastname" required>
+            </p>
+
+            <p>
+                <b><label for="birthdate">Birth date</label></b>
+            </p>
+            <p>
+            <input type="date" name="birthdate" id="birthdate" required>
+            </p>
+
+            <p>
+                <b><label for="country">Country</label></b>
+            </p>
+            <p>
+            <input type="text" name="country" id="country" required>
+            </p>
+
+            <p>
+                <b><label for="city">City</label></b>
+            </p>
+            <p>
+            <input type="text" name="city" id="city" required>
+            </p>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>    
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+body, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    color: #444;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form p {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: rgb(78, 36, 72);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(104, 45, 95);
+}
+
+.member {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.member p {
+    margin: 0;
+}
+
+.member i {
+    color: #888;
+    display: block;
+    margin-top: 5px;
+}
+
+.member form {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 0;
+    color: rgb(78, 36, 72);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: rgb(143, 59, 131);
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.content p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+}
